@@ -1,0 +1,169 @@
+.main-co {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .booking-info {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .booking-meta {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .pickup-section, .delivery-section {
+    margin-top: 20px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 8px;
+  }
+  
+  .confirmed-details {
+    background: #e8f5e9;
+    padding: 20px;
+    border-radius: 6px;
+    border-left: 4px solid #4CAF50;
+  }
+  
+  .confirmed-details h3 {
+    color: #2e7d32;
+    margin-top: 0;
+  }
+  
+  .instructions {
+    color: #666;
+    font-style: italic;
+    margin-top: 10px;
+  }
+  
+  button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s;
+  }
+  
+  button:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+  }
+  
+  button.generating {
+    background-color: #2196F3 !important;
+    color: white;
+  }
+  
+  /* Pickup specific styles */
+  .pickup-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .pickup-section input[type="datetime-local"] {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    max-width: 250px;
+  }
+  
+  /* Delivery confirmation */
+  .delivery-section button {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  /* Products section */
+  .products-section {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .products-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .product-item {
+    display: flex;
+    gap: 20px;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .product-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  
+  .product-details {
+    flex-grow: 1;
+  }
+  
+  .no-products {
+    text-align: center;
+    color: #666;
+    padding: 20px;
+  }
+  .confirmed-status {
+    color: #4CAF50;
+    font-weight: bold;
+    margin-left: 8px;
+  }
+  
+  .pending-status {
+    color: #f44336;
+    font-weight: bold;
+    margin-left: 8px;
+  }
+  
+  .confirmed-pickup {
+    background: #e8f5e9;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid #4CAF50;
+  }
+  
+  .confirmed-pickup h3 {
+    color: #2e7d32;
+    margin-top: 0;
+  }
+  
+  .secret-code-display {
+    background: white;
+    padding: 15px;
+    border-radius: 6px;
+    margin: 15px 0;
+  }
+  
+  .confirmed-delivery {
+    background: #e8f5e9;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid #4CAF50;
+  }
+  
+  .instructions {
+    color: #666;
+    font-style: italic;
+    margin-top: 10px;
+  }
+  
+  .headoo{
+    color: rgb(2, 2, 29);
+  }

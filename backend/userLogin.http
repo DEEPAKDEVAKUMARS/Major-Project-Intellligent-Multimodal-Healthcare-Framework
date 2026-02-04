@@ -1,0 +1,13 @@
+POST http://localhost:3000/register
+Content-Type:application/json
+
+{
+  "name": "John Doe",
+  "ration_number": "1234567890",
+  "phone": "9876543210",
+  "address": "123 Main St, Chennai",
+  "family_members": 4,
+  "user_type": "citizen",
+  "gender": "male",
+  "password": "securepassword"
+}

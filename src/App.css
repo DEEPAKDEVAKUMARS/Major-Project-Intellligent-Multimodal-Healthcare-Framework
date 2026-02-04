@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.main-Con{
+  
+  height:100vh;
+  width: 100vw;
+  
+  font-family: "Roboto";
+}
+.stars-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.star {
+  position: absolute;
+  --star-color: rgba(255, 255, 255, 0.9);
+  --star-tail-length: 8em;
+  --star-tail-height: 3px;
+  --star-width: calc(var(--star-tail-length) / 4);
+  --fall-duration: 6s;
+  --tail-fade-duration: var(--fall-duration);
+
+  top: var(--top-offset);
+  left: 0;
+  width: var(--star-tail-length);
+  height: var(--star-tail-height);
+  color: var(--star-color);
+  background: linear-gradient(45deg, currentColor, transparent);
+  border-radius: 50%;
+  filter: drop-shadow(0 0 8px currentColor);
+  transform: translate3d(100vw, 0, 0) rotate(-45deg);
+  animation: fall var(--fall-duration) var(--fall-delay) linear infinite, 
+             tail-fade var(--tail-fade-duration) var(--fall-delay) ease-out infinite;
+  will-change: transform, opacity;
+}
+
+.star::before, 
+.star::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: calc(var(--star-width) / -2);
+  width: var(--star-width);
+  height: 100%;
+  background: linear-gradient(45deg, transparent, currentColor, transparent);
+  border-radius: inherit;
+  animation: blink 2s linear infinite;
+}
+
+@keyframes fall {
+  to {
+      transform: translate3d(-100vw, 0, 0) rotate(-45deg);
+  }
+}
+
+@keyframes tail-fade {
+  0%, 50% { width: var(--star-tail-length); opacity: 1; }
+  90%, 100% { width: 0; opacity: 0; }
+}
+
+@keyframes blink {
+  50% { opacity: 0.75; }
+}
+
+/* Content Styles */
+.content-wrapper {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+}
+.small-Con{
+  position: fixed; /* Changed from default positioning */
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); /* Perfect centering */
+  background-color: whitesmoke; 
+  height:50vh;
+  width: 40vw;
+  border-radius: 16px;
+  border-width: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  position: relative;
+  
+
+}
+.small-Con2{
+  position: fixed; /* Changed from default positioning */
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color:  whitesmoke; 
+  height:95vh;
+  width: 60vw;
+  border-radius: 16px;
+  border-width: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+ 
+}
+
+.btn-Home{
+  width:120px;
+  height: 50px;
+  background-color: rgb(144, 18, 18);
+  border-width: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+.btn-Home2{
+  width:120px;
+  height: 50px;
+  background-color: white;
+  border-width: none;
+  border-radius: 8px;
+  color: rgb(144, 18, 18);
+  border-radius: 8px;
+  font-weight: bold;  
+}
+.heady-Home{
+  font-size: 50px;
+  color: rgb(144, 18, 18);
+  font-weight: bold;
+  width:30vw;
+}
+.form-control{
+  width:30vw;
+}
+.policy-container {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Adjust spacing between checkbox and text */
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.policy-container input {
+  width: 16px;
+  height: 16px;
+}

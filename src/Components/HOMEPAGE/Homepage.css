@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.logo1 {
+    height: 70px;
+    margin: 10px;
+    margin-left: 0px;
+    margin-right: 500px;
+    align-self: flex-start;
+    border-radius: 200px;
+}
+
+.nav-li {
+    font-weight: bold;
+    color: white;
+    font-family: "Roboto";
+}
+.shabbo{
+    
+    align-self: flex-end;
+}
+.boy{
+    color: white;
+    font-size: 80px;
+    font-weight: bold;
+}
+
+.bg-con {
+    background-image: url("https://static.vecteezy.com/system/resources/thumbnails/008/843/691/original/abstract-pink-dna-designed-in-pastel-tone-can-be-used-in-education-science-or-medicine-industry-background-3d-render-video.jpg");
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    
+}
+
+.headmain {
+    background-image: url(https://framerusercontent.com/images/2IaeICXvsJApqTXCae1q1dVMVIE.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    background-clip: text;
+    
+    color: rgb(130, 16, 16);
+    font-size: 80px;
+    font-family: Outfit, sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    text-align: center;
+    letter-spacing: 0px;
+    white-space: normal;
+    line-height: 1;
+    
+    padding: 0px 0px 10px;
+    margin-top: 140px;
+}
+
+.paramain {
+    color: rgb(130, 16, 16);
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 28px;
+}
+
+.button1, .custom-button, .custom-button22 {
+    color: whitesmoke;
+    
+    width: 200px;
+    height: 70px;
+    border-style: none;
+    background-color: rgb(130, 16, 16);
+    border-width: 0px;
+    border-radius: 8px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.button2 {
+    background-color: transparent;
+    color: rgb(130, 16, 16);
+    width: 200px;
+    height: 70px;
+    border-style: solid;
+    border-color: rgb(130, 16, 16);
+    border-width: 3px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.bg34 {
+    background-color:rgb(144, 31, 31);
+}
+
+.healthy-food-section, .delivery-and-payment-section {
+    background-color: #f9fbfe;
+}
+
+.healthy-food-section-heading, .delivery-and-payment-section-heading {
+    color: #183b56;
+    font-family: "Roboto";
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.healthy-food-section-description, .delivery-and-payment-section-description {
+    color: #5a7184;
+    font-family: "Roboto";
+    font-size: 16px;
+}
+
+.healthy-food-section-img, .delivery-and-payment-section-img {
+    width: 270px;
+}
+
+.em-section {
+    color: white;
+    font-family: "Roboto";
+    background-color: red;
+}
+
+.em-head {
+    font-weight: bold;
+    font-size: 28px;
+    color: white;
+}
+
+.em-i1 {
+    border-radius: 16px;
+    height: 304px;
+    width: 290px;
+}
+
+.mc-title {
+    color: red;
+    font-weight: bold;
+    margin-top: 24px;
+    font-size: 18px;
+}
+
+.menuit-link {
+    color: #d0b200;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.menuit-card {
+    border-radius: 16px;
+    background-color: white;
+}
+
+.wcu-content {
+    text-align: right;
+    max-width: 600px;
+}
+
+.wcu-section {
+    background-color: rgb(102, 10, 10);
+    background-size: cover;
+    justify-content: flex-end;
+}
+
+.wcu-head {
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 32px;
+    color: white;
+}
+
+.wcu-para {
+    font-family: "Roboto";
+    font-size: 18px;
+    color: white;
+}
+
+.wcu-card {
+    background-color: white;
+    color: red;
+    font-family: "Roboto";
+    text-align: center;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 16px;
+    background-size: cover;
+}
+
+.wcu-card-image {
+    height: 90px;
+    width: 87px;
+}
+
+.wcu-card-title {
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.wcu-card-desc {
+    color: black;
+    font-size: 16px;
+}
+
+.offers {
+    color: black;
+    font-weight: bold;
+}
+
+.follow-us-section {
+    background-color: red;
+}
+
+.follow-us-section-heading {
+    text-align: center;
+    color: white;
+    font-family: "Roboto";
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.follow-us-icon-container {
+    background-color: white;
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    margin: 15px;
+    padding: 22px 16px 14px 22px;
+}
+
+.icon {
+    color: red;
+    font-size: 35px;
+}
+
+.footer-section {
+    background-color: #0d2436;
+}
+
+.footer-section-mail-id {
+    color: #959ead;
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.footer-section-address {
+    color: #959ead;
+    font-family: "Roboto";
+    font-size: 14px;
+}
+
+.kanye-ye {
+    color: red;
+    font-weight: 800;
+    font-family: "Roboto";
+}
+
+@media screen and (min-width:768px) {
+    .nav-link {
+        font-size: 18px;
+    }
+}
+.thankyouGift{
+    height:400px;
+}
+@keyframes beating {
+    0% {
+        font-size: 40px;
+        color: red;
+    }
+
+    100% {
+        font-size: 80px;
+        color:  rgb(102, 10, 10);
+    }
+}
+
+
+.heart-beat {
+    width: 10px;
+    height: 10px;
+    animation: beating 1.76s infinite;
+    margin-bottom: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(102, 10, 10);
+    margin-left: 20px;
+    
+}
+
+.container-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.btn-divv{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}

@@ -1,0 +1,238 @@
+/* AppointmentFinder.css */
+.psychiatrist-finder {
+  text-align: center;
+  margin: 40px auto;
+  max-width: 1400px;
+  padding: 0 20px;
+}
+
+.hero-section {
+  background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+  padding: 60px 20px;
+  border-radius: 20px;
+  margin-bottom: 40px;
+  box-shadow: 0 8px 30px rgba(99, 102, 241, 0.2);
+}
+
+h1 {
+  font-size: 2.8rem;
+  color: white;
+  margin-bottom: 15px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.location-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  backdrop-filter: blur(5px);
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-size: 1.2rem;
+  color: #6366f1;
+  padding: 20px;
+}
+
+.loading-spinner {
+  width: 24px;
+  height: 24px;
+  border: 3px solid #e0e7ff;
+  border-top-color: #6366f1;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.error {
+  background: #fee2e2;
+  color: #dc2626;
+  padding: 20px;
+  border-radius: 12px;
+  margin: 20px auto;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.retry-button {
+  background: #6366f1;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.retry-button:hover {
+  transform: translateY(-2px);
+}
+
+.psychiatrist-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 20px 0;
+}
+
+.psychiatrist-card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.psychiatrist-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.psychiatrist-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #6366f1 0%, #a855f7 100%);
+}
+
+.psychiatrist-card h2 {
+  font-size: 1.4rem;
+  color: #1f2937;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: 500;
+  color: #f59e0b;
+}
+
+.star-icon {
+  width: 18px;
+  height: 18px;
+  fill: #f59e0b;
+}
+
+.open-now {
+  font-size: 0.85rem;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.open-now svg {
+  width: 14px;
+  height: 14px;
+}
+
+.open {
+  background: #dcfce7;
+  color: #16a34a;
+}
+
+.closed {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.address {
+  color: #6b7280;
+  font-size: 0.95rem;
+  margin: 12px 0;
+  line-height: 1.4;
+}
+
+.phone-call {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #6366f1;
+  color: white;
+  padding: 12px;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+  margin: 15px 0;
+}
+
+.phone-call:hover {
+  background: #4f46e5;
+}
+
+.phone-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.place-image {
+  width: 100%;
+  height: 180px;
+  border-radius: 12px;
+  object-fit: cover;
+  margin: 15px 0;
+}
+
+.view-on-map {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #6366f1;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.view-on-map:hover {
+  color: #4f46e5;
+}
+
+.map-icon {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+  
+  .psychiatrist-list {
+    grid-template-columns: 1fr;
+  }
+}

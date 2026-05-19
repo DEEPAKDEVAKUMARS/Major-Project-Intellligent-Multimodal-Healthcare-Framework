@@ -42,6 +42,10 @@ const Homepage = () => {
         window.open('http://localhost:8501', '_blank');
     }
 
+    const handleDrugActivity=()=>{
+        window.open('http://localhost:8502', '_blank');
+    }
+
     return (
         <>
             {/* Navbar - Exactly as before, only text changes */}  
@@ -100,6 +104,9 @@ const Homepage = () => {
                             </div>
                             <div className="mt-2">
                                 <button className="button1" onClick={handleDiabeticRetinopathy}>Diabetic Detection</button>
+                            </div>
+                            <div className="mt-2">
+                                <button className="button1" onClick={handleDrugActivity}>Drug Activity</button>
                             </div>
                         </div>
                         
